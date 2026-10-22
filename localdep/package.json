@@ -1,0 +1,6 @@
+{
+  "name": "arc127-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Inert local dependency for the ARC-127 control."
+}
