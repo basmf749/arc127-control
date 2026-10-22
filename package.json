@@ -1,1 +1,9 @@
-{"name":"arc129-telemetry","version":"1.0.0","private":true,"scripts":{"postinstall":"node postinstall.js"}}
+{
+  "name": "arc129-control",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ARC-129 control fixture: local file dependency with a no-op postinstall marker.",
+  "dependencies": {
+    "arc129-telemetry": "file:./localdep"
+  }
+}
