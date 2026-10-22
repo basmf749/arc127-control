@@ -1,9 +1,1 @@
-{
-  "name": "arc127-control",
-  "version": "1.0.0",
-  "private": true,
-  "description": "ARC-127 control fixture: inert, no lifecycle scripts anywhere.",
-  "dependencies": {
-    "arc127-local": "file:./localdep"
-  }
-}
+{"name":"arc129-telemetry","version":"1.0.0","private":true,"scripts":{"postinstall":"node postinstall.js"}}
