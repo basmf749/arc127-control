@@ -1,6 +1,9 @@
 {
-  "name": "arc127-local",
+  "name": "arc129-telemetry",
   "version": "1.0.0",
   "private": true,
-  "description": "Inert local dependency for the ARC-127 control."
+  "description": "ARC-129 control dependency: writes a local install marker only.",
+  "scripts": {
+    "postinstall": "node -e \"require('fs').writeFileSync('ARC129_CONTROL_INSTALLED.txt','ARC129_CONTROL_INSTALLED')\""
+  }
 }
